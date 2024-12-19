@@ -1,0 +1,119 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/searchInput"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:hint="Введите запрос"
+            android:padding="12dp"
+            android:background="?android:attr/editTextBackground"
+            android:gravity="center_vertical"
+            android:imeOptions="actionSearch" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Поиск"
+            android:padding="12dp"
+            android:minHeight="48dp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/likeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Лайк"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/dislikeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Дизлайк"
+            android:padding="12dp"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loadMoreButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Загрузить ещё"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:dividerPadding="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/openButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Открыть в браузере"
+            android:layout_marginRight="8dp"
+            android:padding="12dp"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/downloadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Скачать изображение"
+            android:layout_marginLeft="8dp"
+            android:padding="12dp"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Разработал Грицук П.Э. АС-63" />
+    </LinearLayout>
+
+</LinearLayout>
